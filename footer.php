@@ -385,7 +385,6 @@ $footer_layout = get_field('footer_layout', 'option');
 
 <?php edit_post_link('Quick Edit'); ?>
 
-
 </body>
 
 </html>
