@@ -1,14 +1,12 @@
 <?php
-
-/**
+   /**
  * The template for displaying the footer *
  * Contains the closing of the #content div and all content after. *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials *
  * @package Contractor_Starter_Theme
  */
 // Custom field vars
-
-$address = get_field('address', 'option');
+   $address = get_field('address', 'option');
 $full_address = get_field('full_address', 'option');
 $phone_number = get_field('phone_number', 'option');
 $email = get_field('email_address', 'option');
@@ -22,12 +20,9 @@ $companycam_script = get_field('companycam_script', 'option');
 $footer_bg = get_field('footer_background_color', 'option');
 $footer_locations = get_field('footer_locations', 'option');
 $footer_layout = get_field('footer_layout', 'option');
-
-?>
-
-<?php wp_footer(); ?>
-
-<footer id="colophon" class="site-footer">
+   ?>
+   <?php wp_footer(); ?>
+   <footer id="colophon" class="site-footer">
 	<div class="footer-top <?php echo $footer_bg; ?>">
 		<div class="container">
 			<div class="row row-footer-top">
@@ -382,9 +377,6 @@ $footer_layout = get_field('footer_layout', 'option');
 		})
 	</script>
 <?php endif; ?>
-
-<?php edit_post_link('Quick Edit'); ?>
-
-</body>
-
-</html>
+   <?php edit_post_link('Quick Edit'); ?>
+   </body>
+   </html>
